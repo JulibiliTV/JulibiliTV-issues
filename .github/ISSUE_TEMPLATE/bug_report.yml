@@ -1,0 +1,73 @@
+name: Bug report / 问题反馈
+description: Report a reproducible problem with JuliBiliTV / 反馈应用问题
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem in English or Chinese. This report and its attachments will be public. No email address is needed.
+        可使用中文或英文。反馈及附件会公开展示，不需要填写邮箱。
+        Remove credentials, server addresses, private media links, and personal information before posting.
+        发布前请移除凭据、服务器地址、私有媒体链接及个人信息。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting / 提交前确认
+      options:
+        - label: I searched existing issues / 我已搜索已有反馈
+          required: true
+        - label: I removed sensitive information from the report and attachments / 我已移除正文与附件中的敏感信息
+          required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: App and device / 应用与设备
+      description: App version/build, tvOS version, Apple TV model. Unknown values are OK. / App 版本与构建号、tvOS 版本、Apple TV 型号；不清楚可注明。
+      placeholder: |
+        App version/build:
+        tvOS version:
+        Apple TV model:
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Media source / 媒体来源
+      options:
+        - Emby
+        - Jellyfin
+        - WebDAV
+        - Other / 其他
+        - Not related to a media source / 与媒体来源无关
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      description: Describe the actions leading to the problem and how often it happens. / 描述出现问题前的操作及出现频率。
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual behavior / 预期与实际表现
+      placeholder: |
+        Expected / 预期：
+        Actual / 实际：
+    validations:
+      required: true
+  - type: textarea
+    id: playback
+    attributes:
+      label: Playback details, if relevant / 播放相关信息（可选）
+      description: Server type/version, MPV or AVPlayer, codec/container, HDR, audio/subtitles, and whether one or multiple files are affected. Do not include server URLs. / 可填写服务器版本、播放引擎、编码封装、HDR、音轨字幕及影响范围；不要填写服务器地址。
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or short log excerpts / 截图或少量日志（可选）
+      description: Inspect and redact attachments before uploading. Do not attach full logs or private media. / 上传前请检查并遮盖敏感信息，不要上传完整日志或私有媒体。

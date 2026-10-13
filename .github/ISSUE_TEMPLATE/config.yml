@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Support and feedback / 联系支持
+    url: https://julibilitv.cc/feedback
+    about: Visit the official support page / 访问官方支持页面
+  - name: Report a security vulnerability / 报告安全漏洞
+    url: https://github.com/JulibiliTV/JulibiliTV-issues/security/policy
+    about: Please report vulnerabilities privately / 请通过私密渠道报告安全问题

@@ -1,0 +1,35 @@
+name: Feature request / 功能建议
+description: Suggest an improvement to JuliBiliTV / 提出改进建议
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English and Chinese are welcome. Suggestions are public and do not require an email address.
+        支持中文和英文。建议会公开展示，无需填写邮箱。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting / 提交前确认
+      options:
+        - label: I searched existing suggestions and removed personal information / 我已搜索已有建议并移除个人信息
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do? / 你希望完成什么？
+      description: Describe your use case and the current difficulty. / 描述使用场景和当前遇到的困难。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested improvement / 改进建议
+      description: Explain the behavior you would like to see. / 说明你希望应用如何改进。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or examples / 替代方法或示例（可选）
+      description: Include relevant examples without credentials or private links. / 可提供参考示例，不要包含凭据或私有链接。
